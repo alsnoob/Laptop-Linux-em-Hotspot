@@ -4,7 +4,7 @@ Transforma um notebook Linux com **Ubuntu** (ou qualquer distro com NetworkManag
 
 Criado e testado em um notebook **CCE F4030** rodando **Ubuntu 26.04 LTS**.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Cria um hotspot Wi-Fi (WPA2) usando `nmcli`/NetworkManager — sem precisar configurar `hostapd`, `dnsmasq` ou `iptables` manualmente.
 - Detecta automaticamente a interface Wi-Fi e a interface Ethernet conectada.
@@ -12,14 +12,14 @@ Criado e testado em um notebook **CCE F4030** rodando **Ubuntu 26.04 LTS**.
 - Comando de status que lista as conexões ativas e os **dispositivos conectados ao hotspot** (MAC, IP e nome, quando disponível).
 - Oculta a senha na saída do terminal.
 
-## 📋 Requisitos
+## Requisitos
 
 - Linux com **NetworkManager** (padrão no Ubuntu Desktop).
 - Placa Wi-Fi com suporte a **modo AP** (Access Point).
 - Conexão de internet ativa via cabo Ethernet.
 - Permissões de superusuário (`sudo`).
 
-## 🚀 Instalação
+## Instalação
 
 ```bash
 git clone https://github.com/alsnoob/hotspot.git
@@ -27,7 +27,7 @@ cd hotspot
 chmod +x hotspot.sh
 ```
 
-## ⚙️ Configuração
+## Configuração
 
 Antes do primeiro uso, edite as variáveis no topo do arquivo `hotspot.sh`:
 
@@ -36,7 +36,7 @@ SSID="MeuNotebookRouter"
 SENHA="senha12345"        # mínimo 8 caracteres (WPA2)
 ```
 
-## 🖥️ Uso
+## Uso
 
 **Ativar o hotspot:**
 ```bash
@@ -53,7 +53,7 @@ sudo ./hotspot.sh status
 sudo ./hotspot.sh stop
 ```
 
-## 🔍 Como funciona
+## Como funciona
 
 O script usa `nmcli device wifi hotspot` para criar uma conexão Wi-Fi em modo Access Point na interface sem fio detectada. O NetworkManager, ao usar `ipv4.method shared`, cuida automaticamente de:
 
@@ -66,7 +66,7 @@ Os dispositivos conectados são identificados a partir do arquivo de leases do D
 /var/lib/NetworkManager/dnsmasq-<interface_wifi>.leases
 ```
 
-## ⚠️ Observações
+## Observações
 
 - Notebooks com placas Wi-Fi mais simples/baratas podem não suportar modo AP. Para verificar:
   ```bash
