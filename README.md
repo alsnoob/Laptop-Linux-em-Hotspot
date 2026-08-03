@@ -22,14 +22,14 @@ Criado e testado em um notebook **CCE F4030** rodando **Ubuntu 26.04 LTS**.
 ## Instalação
 
 ```bash
-git clone https://github.com/alsnoob/hotspot.git
+git clone https://github.com/alsnoob/Hotspot.git
 cd hotspot
 chmod +x hotspot.sh
 ```
 
 ## Configuração
 
-Antes do primeiro uso, edite as variáveis no topo do arquivo `hotspot.sh`:
+Antes do primeiro uso, edite as variáveis no topo do arquivo `Hotspot`:
 
 ```bash
 SSID="MeuNotebookRouter"
@@ -40,17 +40,17 @@ SENHA="senha12345"        # mínimo 8 caracteres (WPA2)
 
 **Ativar o hotspot:**
 ```bash
-sudo ./hotspot.sh start
+sudo ./Hotspot start
 ```
 
 **Ver status e dispositivos conectados:**
 ```bash
-sudo ./hotspot.sh status
+sudo ./Hotspot status
 ```
 
 **Desativar o hotspot:**
 ```bash
-sudo ./hotspot.sh stop
+sudo ./Hotspot stop
 ```
 
 ## Como funciona
