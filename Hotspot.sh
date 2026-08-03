@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# hotspot.sh — Transforma o notebook em roteador Wi-Fi
+# Hotspot.sh — Transforma o notebook em roteador Wi-Fi
 # Internet entra via cabo Ethernet, é compartilhada por Wi-Fi (hotspot)
 #
 # Uso:
@@ -21,7 +21,7 @@ WIFI_IFACE=""
 # ======================================================
 
 if [ "$EUID" -ne 0 ]; then
-  echo "Erro: rode este script com sudo. Ex: sudo ./hotspot.sh start"
+  echo "Erro: rode este script com sudo. Ex: sudo ./Hotspot.sh start"
   exit 1
 fi
 
