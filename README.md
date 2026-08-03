@@ -23,8 +23,8 @@ Criado e testado em um notebook **CCE F4030** rodando **Ubuntu 26.04 LTS**.
 
 ```bash
 git clone https://github.com/alsnoob/Hotspot.git
-cd hotspot
-chmod +x hotspot.sh
+cd Hotspot
+chmod +x Hotspot.sh
 ```
 
 ## Configuração
