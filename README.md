@@ -1,4 +1,4 @@
-# Hotspot.sh
+# Script Linux Hotspot
 
 Transforma um notebook Linux com **Ubuntu** (ou qualquer distro com NetworkManager) em um **roteador Wi-Fi**, compartilhando a internet recebida via cabo Ethernet com celulares e outros dispositivos móveis.
 
